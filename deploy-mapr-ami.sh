@@ -70,7 +70,7 @@ MAPR_METRICS_DEFAULT=metrics
 
 MAPR_BUILD=`cat $MAPR_HOME/MapRBuildVersion 2> /dev/null`
 [ -n "${MAPR_BUILD}" ] && MAPR_VERSION=${MAPR_BUILD%.*.*}
-MAPR_VERSION=${MAPR_VERSION:-4.1.0}
+MAPR_VERSION=${MAPR_VERSION:-5.0.0}
 
 # Derived from above settings ... with reasonable defaults
 MAPR_USER_DIR=`eval "echo ~${MAPR_USER}"`
@@ -327,6 +327,7 @@ install_mapr_packages() {
 		[ "${pkg#mapr-}" = "metrics" ] && installMetrics=1
 		MAPR_TO_INSTALL="$MAPR_TO_INSTALL mapr-${pkg#mapr-}"
 	done
+	echo $MAPR_TO_INSTALL
 
 	if [ -n "${MAPR_TO_INSTALL}" ] ; then
 		echo $MAPR_TO_INSTALL | grep -q mapr-client

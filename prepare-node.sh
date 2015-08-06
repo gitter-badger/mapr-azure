@@ -54,7 +54,7 @@ MAPR_PASSWD=$(curl -H "$md_header" -f $murl_attr/maprpasswd)
 MAPR_PASSWD=${MAPR_PASSWD:-"MapR"}
 
 MAPR_VERSION=$(curl -H "$md_header" -f $murl_attr/maprversion)
-MAPR_VERSION=${MAPR_VERSION:-"4.1.0"}
+MAPR_VERSION=${MAPR_VERSION:-"5.0.0"}
 MAPR_PACKAGES=$(curl -H "$md_header" -f $murl_attr/maprpackages)
 MAPR_PACKAGES=${MAPR_PACKAGES:-"core,fileserver"}
 MAPR_PACKAGES=${MAPR_PACKAGES//:/,}

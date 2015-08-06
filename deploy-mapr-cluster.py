@@ -284,7 +284,7 @@ class MIDriver:
         # Spark service
     def addSparkServices (self, spark_version = None) :
         if spark_version == None :
-            spark_version = self.eco_defaults.get('spark', "1.2.1")
+            spark_version = self.eco_defaults.get('spark', "1.3.1")
         elif spark_version.lower() == "none" :
             if 'mapr-spark-client' in self.services :
                 del self.services['mapr-spark-client']
@@ -292,7 +292,7 @@ class MIDriver:
                 del self.services['mapr-spark-historyserver']
             return
         elif self.service_available ('spark', spark_version) == False : 
-            spark_version = self.eco_defaults.get('spark', "1.2.1")
+            spark_version = self.eco_defaults.get('spark', "1.3.1")
 
         self.services["mapr-spark-client"] = { "enabled" : True, "version" : spark_version }
         self.services["mapr-spark-historyserver"] = { "enabled" : True, "version" : spark_version }
