@@ -59,7 +59,7 @@ function main() {
 		# mapr-setup.sh uses different env variable for password.
 	export MAPR_PASSWORD=$MAPR_PASSWD
 	chmod a+x /tmp/mapr-setup.sh
-	/tmp/mapr-setup.sh -y install
+	/tmp/mapr-setup.sh
 	if [ $? -ne 0 ] ; then
 		echo "Failed to deploy MapR Installer with mapr-setup.sh" | tee -a $LOG
 		exit 1

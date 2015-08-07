@@ -38,6 +38,6 @@ sh $BINDIR/prepare-disks.sh
 
 sh $BINDIR/prepare-node.sh
 
-sh $BINDIR/deploy-mapr-ami.sh
+#sh $BINDIR/deploy-mapr-ami.sh
 
 exit 0
