@@ -65,7 +65,7 @@
         }
     },
     "variables": {
-        "scriptsUri" : "https://raw.githubusercontent.com/mapr/mapr-azure/master",
+        "scriptsUri" : "https://raw.githubusercontent.com/minewhat/mapr-azure/master",
         "vmBasename": "[concat(parameters('clusterName'),'node')]",
         "nicBasename": "[concat(parameters('clusterName'),'-nic')]",
         "publicIPAddressBasename": "[concat(parameters('clusterName'),'-publicIP')]",

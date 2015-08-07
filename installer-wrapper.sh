@@ -62,7 +62,7 @@ $BINDIR/deploy-installer.sh
 	#	By default, it will go to https://localhost:9443 ... which is fine
 	#	ssh-user/ssh-password has to match what is in the template
 chmod a+x $BINDIR/deploy-mapr-cluster.py
-$BINDIR/deploy-mapr-cluster.py -y \
+echo $BINDIR/deploy-mapr-cluster.py -y \
 	--ssh-user azadmin \
 	--ssh-password MapRAzur3 \
 	--cluster $MAPR_CLUSTER \
