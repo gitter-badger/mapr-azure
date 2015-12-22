@@ -1,5 +1,7 @@
 # Advanced Linux Template : Deploy a Multi VM MapR Cluster
 
+[![Join the chat at https://gitter.im/minewhat/mapr-azure](https://badges.gitter.im/minewhat/mapr-azure.svg)](https://gitter.im/minewhat/mapr-azure?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 <a href="https://azuredeploy.net/" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
